@@ -8,18 +8,6 @@ try {
       checkout scm
     }
   }
-
-  stage('Setup parameters') {
-    steps {
-      script { 
-        properties([
-          parameters([
-            choice(
-              choices: ['ONE', 'TWO'], 
-              name: 'PARAMETER_01'
-            )
-    }
-  }
             
 
   // Run terraform init
