@@ -56,7 +56,7 @@ try {
           secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
         ]]) {
           ansiColor('xterm') {
-            sh 'terraform ${params.Terraform} -auto-approve'
+            sh "terraform ${params.Terraform} -auto-approve"
           }
         }
       }
