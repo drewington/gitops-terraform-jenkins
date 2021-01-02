@@ -1,6 +1,8 @@
 // Jenkinsfile
 String credentialsId = 'awsCredentials'
 
+properties([parameters([choice(choices: ['apply', 'destroy'], description: '', name: 'Terraform')])])
+
 try {
   stage('checkout') {
     node {
